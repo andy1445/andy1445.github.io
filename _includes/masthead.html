@@ -8,43 +8,43 @@
 <h1 class="{% if site.style == 'dark' %}text-white{% endif %} mb-2 lh-condensed">
   <!-- {% if user.name %}{{ user.name }}{% else %}{{ user.login }}{% endif %}</h1> -->
   Chufan (Andy) Gao</h1>
-<p class="mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
+<!-- <p class="mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
   {{ user.bio }}
-</p>
+</p> -->
 
 {% if include.metadata %}
 <div class="f4 mb-6">
   <!-- {% if user.name %} -->
   <div class="{{ metadata_styles }}">
-    {% octicon mark-github height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:GitHub %}
+    {% octicon mark-github height:20 class:"mr-1 v-align-middle" fill:{{ icon_color }} aria-label:GitHub %}
     <a href="https://github.com/andy1445" {% if site.style == 'dark' %}class="text-white" {% endif %}>
       Github
     </a>
   </div>
 
   <div class="{{ metadata_styles }}">
-    {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} %}
+    {% octicon mail height:20 class:"mr-1 v-align-middle" fill:{{ icon_color }} %}
     <a href="mailto:gaoandy1445@gmail.com" {% if site.style == 'dark' %}class="text-white" {% endif %}>
       Email
     </a>
   </div>
 
   <div class="{{ metadata_styles }}">
-    {% octicon link height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} %}
+    {% octicon link height:20 class:"mr-1 v-align-middle" fill:{{ icon_color }} %}
     <a href="https://www.linkedin.com/in/andy1445/" {% if site.style == 'dark' %}class="text-white" {% endif %}>
       Linkedin
     </a>
   </div>
 
   <div class="{{ metadata_styles }}">
-    {% octicon link height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} %}
+    {% octicon link height:20 class:"mr-1 v-align-middle" fill:{{ icon_color }} %}
     <a href="https://twitter.com/ChufanGao" {% if site.style == 'dark' %}class="text-white" {% endif %}>
       Twitter
     </a>
   </div>
 
   <div class="{{ metadata_styles }}">
-    {% octicon mortar-board height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} %}
+    {% octicon mortar-board height:20 class:"mr-1 v-align-middle" fill:{{ icon_color }} %}
     <a href="https://scholar.google.com/citations?user=rBlZICgAAAAJ&h" {% if site.style == 'dark' %}class="text-white"
       {% endif %}>
       Google Scholar
@@ -52,14 +52,14 @@
   </div>
 
   <div class="{{ metadata_styles }}">
-    {% octicon file height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} %}
+    {% octicon file height:20 class:"mr-1 v-align-middle" fill:{{ icon_color }} %}
     <a href="https://www.overleaf.com/read/djdrkwjgbbvg" {% if site.style == 'dark' %}class="text-white" {% endif %}>
       Resume
     </a>
   </div>
 
   <div class="{{ metadata_styles }}">
-    {% octicon book height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} %}
+    {% octicon book height:20 class:"mr-1 v-align-middle" fill:{{ icon_color }} %}
     <a href="https://www.overleaf.com/read/stsbvcjzdjnd" {% if site.style == 'dark' %}class="text-white" {% endif %}>
       Full CV
     </a>
@@ -88,15 +88,15 @@
   {% if user.hireable %}
       <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
     {% endif %} -->
+  <p class="text-white">
+    <br>
+    I am a currently a staff researcher at Carnegie Mellon University with Professor Artur Dubrawski
+    under the Auton Lab. I am broadly interested in AI, Deep Learning, computer vision, reinforcement learning,
+    and machine learning in healthcare.
+    More specifically, I have worked with generative adversarial networks (GANs) to improve lung nodule detection
+    via 3D convolutional networks, and hemorrhage analysis via deep unsupervised time series encoders.
+    <br>
+    Please check out my full CV for a complete list of my activities!
+  </p>
 </div>
-
-<p class="text-white">
-  I am a currently a staff researcher at Carnegie Mellon University with Professor Artur Dubrawski
-  under the Auton Lab. I am broadly interested in AI, Deep Learning, computer vision, reinforcement learning,
-  and machine learning in healthcare.
-  More specifically, I have worked with generative adversarial networks (GANs) to improve lung nodule detection
-  via 3D convolutional networks, and hemorrhage analysis via deep unsupervised time series encoders.
-  </br>
-  Please check out my full CV for a complete list of my activities!
-</p>
 {% endif %}
