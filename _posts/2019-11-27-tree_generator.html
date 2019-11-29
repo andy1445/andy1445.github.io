@@ -3,7 +3,6 @@ title: "Tree Generator"
 published: True
 ---
 
-
 <head>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -343,7 +342,7 @@ published: True
 
 <body>
     <p>
-        Fractal tree generating code. Limit 50 trees crashing reasons lol. 
+        Fractal tree generating code. Limit 50 trees crashing reasons lol.
         Full code is in this current html file if you're curious about the inner workings.
     </p>
     <form>
@@ -356,8 +355,10 @@ published: True
                 <label for="in_color">Color (blank=random)</label>
                 <input type="text" class="form-control" id="in_color" placeholder="#4E90EC">
             </div>
+            <button type="button" class="submit btn btn-primary">Generate</button>
         </div>
-        <button type="button" class="submit btn btn-primary">Generate</button>
     </form>
-    <canvas id="myCanvas" height="500%" width="700%"></canvas>
+    <div class="row">
+        <canvas id="myCanvas" style="height:400px; width:100%"></canvas>
+    </div>
 </body>
